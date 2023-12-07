@@ -27,16 +27,9 @@
     --fonte-cor-principal: var(--cinza-medio);
 }
 
-/* :root:has(.cabecalho__switch-input:checked) {
-    --bg-cor-principal: var(--azul-profundo);
-    --bg-cor-secundaria: var(--cinza-medio);
-    --fonte-cor-principal: var(--cinza-medio);
-} */
-
 body {
     font-family: Roboto, Arial, Helvetica, sans-serif;
     background-color: var(--bg-cor-principal);
-    /* background-color: var(--azul-profundo); */
     position: relative;
     width: 100%;
     height: 100vh;
