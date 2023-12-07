@@ -81,3 +81,10 @@ function filtrarPorCategoria(filtro) {
     }
   }
 }
+
+const darkModeBotao = document.querySelector(".cabecalho__switch-input");
+
+darkModeBotao.addEventListener("change", () => {
+  const root = document.querySelector(":root");
+  root.classList.toggle("dark-mode", darkModeBotao.checked);
+});
