@@ -313,14 +313,24 @@ input[type="search"]::-webkit-search-results-decoration {
     transition: .5s;
 }
 
+.superior__item[aria-pressed="true"] {
+    background: var(--azul-destaque-light);
+    color: var(--branco);
+}
+
 :root.dark-mode .superior__item {
-    background-color: var(--azul-medio);
+    background-color: var(--azul-escuro);
     color: var(--cinza-medio);
 }
 
 :root.dark-mode .superior__item:hover {
     background-color: var(--cinza-medio);
     color: var(--cinza-escuro);
+}
+
+:root.dark-mode .superior__item[aria-pressed="true"] {
+    background-color: var(--azul-destaque-dark);
+    color: var(--branco);
 }
 
 .superior__slider {

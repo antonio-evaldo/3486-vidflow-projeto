@@ -61,12 +61,22 @@ function filtrarPesquisa() {
   }
 }
 
-const botaoCategoria = document.querySelectorAll(".superior__item");
+const botoesCategorias = document.querySelectorAll(".superior__item");
 
-botaoCategoria.forEach((botao) => {
-  let nomeCategoria = botao.getAttribute("name");
-  botao.addEventListener("click", () => filtrarPorCategoria(nomeCategoria));
-})
+botoesCategorias.forEach((botao) => {
+  botao.addEventListener("click", () => {
+    const categoriaSelecionada = botao.getAttribute("name");
+
+    filtrarPorCategoria(categoriaSelecionada);
+    atualizarEstadosDosBotoes(categoriaSelecionada);
+  });
+});
+
+function atualizarEstadosDosBotoes(categoriaSelecionada) {
+  botoesCategorias.forEach((botao) => {
+    botao.ariaPressed = botao.getAttribute("name") === categoriaSelecionada;
+  })
+}
 
 function filtrarPorCategoria(filtro) {
   const videos = document.querySelectorAll(".videos__item");
