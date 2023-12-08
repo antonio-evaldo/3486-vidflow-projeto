@@ -43,7 +43,7 @@ function filtrarPesquisa() {
   const videos = document.querySelectorAll(".videos__item");
 
   if (barraDePesquisa.value != "") {
-    for (let video of videos) {
+    for (const video of videos) {
       let titulo = video.querySelector(".titulo-video").textContent.toLowerCase();
       let valorFiltro = barraDePesquisa.value.toLowerCase();
 
@@ -55,7 +55,7 @@ function filtrarPesquisa() {
 
     }
   } else {
-    for (let video of videos) {
+    for (const video of videos) {
       video.style.display = "block";
     }
   }
@@ -80,9 +80,9 @@ function atualizarEstadosDosBotoes(categoriaSelecionada) {
 
 function filtrarPorCategoria(filtro) {
   const videos = document.querySelectorAll(".videos__item");
-  for (let video of videos) {
-    let categoria = video.querySelector(".categoria").textContent.toLowerCase();
-    let valorFiltro = filtro.toLowerCase();
+  for (const video of videos) {
+    const categoria = video.querySelector(".categoria").textContent.toLowerCase();
+    const valorFiltro = filtro.toLowerCase();
 
     if (!categoria.includes(valorFiltro) && valorFiltro != 'tudo') {
       video.style.display = "none";
