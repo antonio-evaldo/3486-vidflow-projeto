@@ -55,6 +55,16 @@ input[type="search"]::-webkit-search-results-decoration {
 
 /* CABEÇALHO */
 
+.visualmente-escondido {
+    height: 1px; 
+    width: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+  }
+
 .cabecalho__container {
     background-color: var(--bg-cor-principal);
     height: 80px;
