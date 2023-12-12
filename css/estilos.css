@@ -77,7 +77,8 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .pesquisar__input {
-    padding: 8px;
+    position: relative;
+    padding: 14px 12px;
     background-color: var(--bg-cor-principal);
     border: 2px solid var(--bg-cor-secundaria);
     border-radius: 32px 0px 0px 32px;
@@ -86,8 +87,8 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .pesquisar__input-teclado {
     position: absolute;
-    right: 16%;
-    top: 30%;
+    right: 58px;
+    top: 37%;
 }
 
 .pesquisar__btn {
@@ -100,9 +101,9 @@ input[type="search"]::-webkit-search-results-decoration {
     cursor: pointer;
 }
 
-.cabecalho__audio {
-    border: 0px;
-    background-color: var(--bg-cor-principal);
+.cabecalho__links {
+  display: flex;
+  align-items: center;
 }
 
 .cabecalho__videos {
@@ -312,14 +313,12 @@ input[type="search"]::-webkit-search-results-decoration {
     top: 80px;
     right: 0;
     left: 0;
-    /* transition: transform 0.5s ease-in-out;
-    transform: translateX(0); */
-}
-
-.superior__itens {
-    position: relative;
     overflow-x: scroll;
 }
+
+/* .superior__itens {
+    position: relative;
+} */
 
 .superior__item {
     display: inline-block;
@@ -357,11 +356,6 @@ input[type="search"]::-webkit-search-results-decoration {
     color: var(--branco);
 }
 
-.superior__slider {
-    height: 100%;
-    background-color: var(--bg-cor-principal);
-}
-
 /* SEÇÃO VÍDEOS */
 
 .videos__container {
@@ -375,7 +369,7 @@ iframe {
     height: 62%;
 }
 
-.descricao-video .img-canal {
+.descricao-video .link-img-canal {
     border-radius: 100%;
     width: 40px;
     height: 40px;
@@ -383,6 +377,7 @@ iframe {
 
 .descricao-video .titulo-video {
     font-weight: 700;
+    font-size: 16px;
     color: var(--fonte-cor-principal);
 }
 
@@ -403,6 +398,13 @@ iframe {
         font-size: 16px;
     }
 
+    .menu__secao-titulo {
+        padding: 24px 16px 0;
+        text-align: start;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+
     .menu__lista {
         padding-top: 15px;
     }
@@ -411,9 +413,11 @@ iframe {
         width: 100%;
     }
 
-    .menu__titulo-secao {
-        padding: 24px 16px 0;
-        text-align: start;
+    .menu__lista .menu__itens {
+        font-size: 14px;
+    }
+
+    .menu__links-principais .menu__itens {
         font-weight: 500;
     }
 
@@ -445,8 +449,8 @@ iframe {
 
     /* ESTILOS DO MENU LATERAL */
 
-    .menu__lista {
-        border-bottom: 1.5px solid var(--azul-medio);
+    .menu__secao {
+        border-bottom: 1.5px solid var(--azul-medio);   
     }
 
     /* ESTILOS VIDEOS */

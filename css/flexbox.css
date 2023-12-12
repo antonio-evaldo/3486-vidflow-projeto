@@ -19,12 +19,6 @@
   justify-content: center;
 }
 
-/* SECAO SUPERIOR */
-
-.superior__slider {
-  display: none;
-}
-
 /* MENU */
 
 .menu__container {
@@ -91,7 +85,7 @@
   grid-template-columns: auto 1fr;
 }
 
-.descricao-video .img-canal {
+.descricao-video .link-img-canal {
   grid-area: 1 / 1 / 3 / 2;
 } 
 
@@ -123,14 +117,6 @@
 
   .pesquisar__input {
     width: 530px;
-  }
-
-  /* SECAO SUPERIOR */
-
-  .superior__slider {
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 }
 
@@ -164,7 +150,8 @@
     display: none;
   }
 
-  .menu__colapsar-canais {
+  .menu__expandir-canais {
+    padding: 0 16px 24px;
     cursor: pointer;
   }
 }

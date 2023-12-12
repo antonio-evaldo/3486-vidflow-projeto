@@ -13,8 +13,12 @@ async function buscarEMostrarVideos() {
         <li class="videos__item">
             <iframe src="${video.url}" title="${video.titulo}" frameborder="0" allowfullscreen></iframe>
             <div class="descricao-video">
-                <img class="img-canal" src="${video.imagem} alt="Logo do Canal">
-                <h3 class="titulo-video">${video.titulo}</h3>
+                <a class="link-img-canal" href="#">
+                    <img src="${video.imagem}" alt="Canal ${video.canal}">
+                </a>
+                <a href="#">
+                    <h3 class="titulo-video">${video.titulo}</h3>
+                </a>
                 <p class="titulo-canal">${video.descricao}</p>
                 <p class="categoria" hidden>${video.categoria}</p>
             </div>
@@ -106,19 +110,20 @@ canaisEscondidos.forEach(canal => {
   canal.classList.add("canal-escondido");
 });
 
-const botaoColapsarCanais = document.querySelector(".menu__colapsar-canais");
-let canaisEstaoColapsados = true;
+const botaoExpandirCanais = document.querySelector(".menu__expandir-canais");
 
-botaoColapsarCanais.addEventListener("click", () => {
-  if (canaisEstaoColapsados) {
-    canaisEstaoColapsados = false;
-    botaoColapsarCanais.innerHTML = `
+botaoExpandirCanais.addEventListener("click", () => {
+  const canaisEstaoExpandidos = botaoExpandirCanais.ariaExpanded === "true";
+
+  if (!canaisEstaoExpandidos) {
+    botaoExpandirCanais.ariaExpanded = "true";
+    botaoExpandirCanais.innerHTML = `
       <i class="icone__mostrar icone__mostrar-rotacionado"></i>
       <span class="texto-colapsar-canais">Mostrar menos</span>
     `;
   } else {
-    canaisEstaoColapsados = true;
-    botaoColapsarCanais.innerHTML = `
+    botaoExpandirCanais.ariaExpanded = "false";
+    botaoExpandirCanais.innerHTML = `
       <i class="icone__mostrar"></i>
       <span class="texto-colapsar-canais">Mostrar mais</span>
     `;
