@@ -100,7 +100,7 @@ darkModeBotao.addEventListener("change", () => {
 });
 
 
-const canaisEscondidos = document.querySelectorAll(".menu__canal:nth-child(n + 6)");
+const canaisEscondidos = document.querySelectorAll(":nth-child(n + 6 of .menu__canal)");
 
 canaisEscondidos.forEach(canal => {
   canal.classList.add("canal-escondido");
