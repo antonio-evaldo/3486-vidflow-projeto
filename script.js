@@ -98,3 +98,33 @@ darkModeBotao.addEventListener("change", () => {
   const root = document.querySelector(":root");
   root.classList.toggle("dark-mode", darkModeBotao.checked);
 });
+
+
+const canaisEscondidos = document.querySelectorAll(".menu__canal:nth-child(n + 6)");
+
+canaisEscondidos.forEach(canal => {
+  canal.classList.add("canal-escondido");
+});
+
+const botaoColapsarCanais = document.querySelector(".menu__colapsar-canais");
+let canaisEstaoColapsados = true;
+
+botaoColapsarCanais.addEventListener("click", () => {
+  if (canaisEstaoColapsados) {
+    canaisEstaoColapsados = false;
+    botaoColapsarCanais.innerHTML = `
+      <i class="icone__mostrar icone__mostrar-rotacionado"></i>
+      <span class="texto-colapsar-canais">Mostrar menos</span>
+    `;
+  } else {
+    canaisEstaoColapsados = true;
+    botaoColapsarCanais.innerHTML = `
+      <i class="icone__mostrar"></i>
+      <span class="texto-colapsar-canais">Mostrar mais</span>
+    `;
+  }
+
+  canaisEscondidos.forEach((canal) => {
+    canal.classList.toggle("canal-escondido");
+  });
+});

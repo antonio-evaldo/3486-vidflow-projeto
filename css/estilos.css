@@ -284,6 +284,10 @@ input[type="search"]::-webkit-search-results-decoration {
     content: url(../img/sidebar/keyboard_arrow_down.png);
 }
 
+.icone__mostrar-rotacionado {
+    transform: rotateX(0.5turn)
+}
+
 .icone__videos::before {
     content: url(../img/sidebar/ondemand_video.png);
 }
@@ -405,6 +409,12 @@ iframe {
 
     .menu__lista li {
         width: 100%;
+    }
+
+    .menu__titulo-secao {
+        padding: 24px 16px 0;
+        text-align: start;
+        font-weight: 500;
     }
 
     /* ESTILOS DA SECAO SUPERIOR */

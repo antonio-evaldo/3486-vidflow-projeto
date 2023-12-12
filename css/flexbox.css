@@ -159,4 +159,12 @@
     gap: 15px;
     align-items: center;
   }
+
+  .menu__canal.canal-escondido {
+    display: none;
+  }
+
+  .menu__colapsar-canais {
+    cursor: pointer;
+  }
 }
