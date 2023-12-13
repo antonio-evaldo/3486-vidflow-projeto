@@ -254,35 +254,35 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .icone__alura::before {
-    content: url("../img/sidebar/Avatar_Alura.png");
+    content: url("../img/menu_lateral/Avatar_Alura.png");
 }
 
 .icone__gaveta::before {
-    content: url("../img/sidebar/Avatar_Gaveta.png");
+    content: url("../img/menu_lateral/Avatar_Gaveta.png");
 }
 
 .icone__ballerini::before {
-    content: url("../img/sidebar/Avatar_Rafa.png");
+    content: url("../img/menu_lateral/Avatar_Rafa.png");
 }
 
 .icone__iamarino::before {
-    content: url("../img/sidebar/Avatar_Atila.png");
+    content: url("../img/menu_lateral/Avatar_Atila.png");
 }
 
 .icone__souto::before {
-    content: url("../img/sidebar/Avatar_Souto.png");
+    content: url("../img/menu_lateral/Avatar_Souto.png");
 }
 
 .icone__nerd::before {
-    content: url("../img/sidebar/Avatar_Jovem_Nerd.png");
+    content: url("../img/menu_lateral/Avatar_Jovem_Nerd.png");
 }
 
 .icone__deschamps::before {
-    content: url("../img/sidebar/Avatar_Deschamps.png");
+    content: url("../img/menu_lateral/Avatar_Deschamps.png");
 }
 
 .icone__mostrar::before {
-    content: url("../img/sidebar/keyboard_arrow_down.png");
+    content: url("../img/menu_lateral/keyboard_arrow_down.png");
 }
 
 .icone__mostrar-rotacionado {
