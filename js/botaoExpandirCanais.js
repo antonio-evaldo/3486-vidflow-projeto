@@ -14,6 +14,8 @@ botaoExpandirCanais.addEventListener("click", () => {
       <i class="icone__mostrar icone__mostrar-rotacionado"></i>
       <span class="texto-colapsar-canais">Mostrar menos</span>
     `;
+
+    canaisExtras[0].querySelector('a').focus();
   } else {
     botaoExpandirCanais.ariaExpanded = "false";
     botaoExpandirCanais.innerHTML = `
