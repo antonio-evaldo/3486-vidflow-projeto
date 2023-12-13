@@ -1,3 +1,4 @@
+const tabList = document.querySelector('[role="tablist"]');
 const botoesCategorias = document.querySelectorAll(".botao-categoria");
 
 botoesCategorias.forEach((botao) => {
@@ -26,6 +27,8 @@ function filtrarPorCategoria(filtro) {
 
 function atualizarEstadosDosBotoes(categoriaSelecionada) {
   botoesCategorias.forEach((botao) => {
-    botao.ariaPressed = botao.getAttribute("name") === categoriaSelecionada;
+    const botaoFoiSelecionado = botao.getAttribute("name") === categoriaSelecionada;
+
+    // botao.setAttribute("aria-selected", botaoFoiSelecionado);
   })
 }

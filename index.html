@@ -216,74 +216,52 @@
     <main>
         <h2 class="visualmente-escondido">Seção de vídeos</h2>
 
-        <ul aria-label="Categorias de vídeos" class="superior__secao__container">
-            <li>
-                <button aria-pressed="true" name="Tudo" class="superior__item">
-                    Tudo
-                </button>
-            </li>
+        <div role="tablist" aria-label="Categorias de vídeos" class="superior__secao__container">
+            <button role="tab" aria-controls="painel-videos" aria-selected="true" name="Tudo" class="botao-categoria">
+                Tudo
+            </button>
 
-            <li>
-                <button aria-pressed="false" name="Debates" class="superior__item">
-                    Debates
-                </button>
-            </li>
+            <button role="tab" aria-controls="painel-videos" aria-selected="false" name="Debates" class="botao-categoria">
+                Debates
+            </button>
 
-            <li>
-                <button aria-pressed="false" name="Ao Vivo" class="superior__item">
-                    Ao Vivo
-                </button>
-            </li>
+            <button role="tab" aria-controls="painel-videos" aria-selected="false" name="Ao Vivo" class="botao-categoria">
+                Ao Vivo
+            </button>
 
-            <li>
-                <button aria-pressed="false" name="Podcasts" class="superior__item">
-                    Podcasts
-                </button>
-            </li>
+            <button role="tab" aria-controls="painel-videos" aria-selected="false" name="Podcasts" class="botao-categoria">
+                Podcasts
+            </button>
 
-            <li>
-                <button aria-pressed="false" name="Front-end" class="superior__item">
-                    Front-end
-                </button>
-            </li>
+            <button role="tab" aria-controls="painel-videos" aria-selected="false" name="Front-end" class="botao-categoria">
+                Front-end
+            </button>
 
-            <li>
-                <button aria-pressed="false" name="Mobile" class="superior__item">
-                    Mobile
-                </button>
-            </li>
+            <button role="tab" aria-controls="painel-videos" aria-selected="false" name="Mobile" class="botao-categoria">
+                Mobile
+            </button>
 
-            <li>
-                <button aria-pressed="false" name="Data Science" class="superior__item">
-                    Data Science
-                </button>
-            </li>
+            <button role="tab" aria-controls="painel-videos" aria-selected="false" name="Data Science" class="botao-categoria">
+                Data Science
+            </button>
 
-            <li>
-                <button aria-pressed="false" name="Apps" class="superior__item">
-                    Apps
-                </button>
-            </li>
+            <button role="tab" aria-controls="painel-videos" aria-selected="false" name="Apps" class="botao-categoria">
+                Apps
+            </button>
 
-            <li>
-                <button aria-pressed="false" name="Programação" class="superior__item">
-                    Programação
-                </button>
-            </li>
+            <button role="tab" aria-controls="painel-videos" aria-selected="false" name="Programação" class="botao-categoria">
+                Programação
+            </button>
 
-            <li>
-                <button aria-pressed="false" name="Inteligência Artificial" class="superior__item">
-                    Inteligência Artificial
-                </button>
-            </li>
-            <li>
-                <button aria-pressed="false" name="Inovação" class="superior__item">
-                    Inovação
-                </button>
-            </li>
-        </ul>
+            <button role="tab" aria-controls="painel-videos" aria-selected="false" name="Inteligência Artificial" class="botao-categoria">
+                Inteligência Artificial
+            </button>
+            <button role="tab" aria-controls="painel-videos" aria-selected="false" name="Inovação" class="botao-categoria">
+                Inovação
+            </button>
+        </div>
 
-        <ul aria-label="Vídeos" class="videos__container">
+        <ul id="painel-videos" aria-label="Vídeos" class="videos__container">
 
         </ul>
     </main>
