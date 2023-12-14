@@ -16,7 +16,7 @@
     <header>
         <h1 class="visualmente-escondido">Vidflow</h1>
 
-        <nav class="cabecalho__container">
+        <div class="cabecalho__container">
             <a href="/" class="logo__item">
                 <img src="./img/VidFlow--Logo-light-mode.png" alt="Página inicial do VidFlow">
             </a>
@@ -31,29 +31,31 @@
                 </form>
             </div>
 
-            <ul class="cabecalho__links">
-                <li>
-                    <a title="Criar vídeo" aria-label="Criar vídeo" href="#" class="cabecalho__videos"></a>
-                </li>
-
-                <li>
-                    <a title="Configurações" aria-label="Aplicativos" href="#" class="cabecalho__apps"></a>
-                </li>
-
-                <li>
-                    <a title="Notificações" aria-label="Notificações" href="#" class="cabecalho__notificacoes"></a>
-                </li>
-
-                <li>
-                    <a title="Perfil" aria-label="Perfil" href="#" class="cabecalho__avatar"></a>
-                </li>
-
+            <div class="secao-links-e-botao-switch">
+                <ul aria-label="Links do cabeçalho" class="cabecalho__links">
+                    <li>
+                        <a title="Criar vídeo" aria-label="Criar vídeo" href="#" class="cabecalho__videos"></a>
+                    </li>
+    
+                    <li>
+                        <a title="Aplicativos" aria-label="Aplicativos" href="#" class="cabecalho__apps"></a>
+                    </li>
+    
+                    <li>
+                        <a title="Notificações" aria-label="Notificações" href="#" class="cabecalho__notificacoes"></a>
+                    </li>
+    
+                    <li>
+                        <a title="Perfil da conta" aria-label="Perfil da conta" href="#" class="cabecalho__avatar"></a>
+                    </li>
+                </ul>
+    
                 <label title="Alternar modo escuro" class="cabecalho__switch">
                     <input aria-label="Alternar modo escuro" type="checkbox" class="cabecalho__switch-input">
                     <span class="cabecalho__switch-slider"></span>
                 </label>
-            </ul>
-        </nav>
+            </div>
+        </div>
     </header>
 
 

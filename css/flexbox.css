@@ -19,6 +19,10 @@
   justify-content: center;
 }
 
+.secao-links-e-botao-switch {
+  display: flex;
+}
+
 /* MENU */
 
 .menu__container {
