@@ -79,6 +79,9 @@
   flex-grow: 1;
 }
 
+.videos__item.escondido {
+  display: none;
+}
 
 .descricao-video {
   margin-top: 1rem;
@@ -116,7 +119,6 @@
 
   .cabecalho__pesquisar__item {
     display: block;
-    transform: translate(-60px);
   }
 
   .pesquisar__input {
@@ -150,7 +152,7 @@
     align-items: center;
   }
 
-  .menu__canal.canal-escondido {
+  .menu__canal.escondido {
     display: none;
   }
 

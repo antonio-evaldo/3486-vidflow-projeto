@@ -2,6 +2,7 @@ const formPesquisa = document.querySelector('.form__pesquisa');
 
 formPesquisa.addEventListener('submit', (evento) => {
   evento.preventDefault();
+  document.querySelector(".videos__item:not(.escondido) > iframe").focus();
 });
 
 const barraDePesquisa = document.querySelector(".pesquisar__input");
@@ -16,16 +17,11 @@ function filtrarPesquisa() {
       let titulo = video.querySelector(".titulo-video").textContent.toLowerCase();
       let valorFiltro = barraDePesquisa.value.toLowerCase();
 
-      if (!titulo.includes(valorFiltro)) {
-        video.style.display = "none";
-      } else {
-        video.style.display = "block";
-      }
-
+      video.classList.toggle("escondido", !titulo.includes(valorFiltro))
     }
   } else {
     for (const video of videos) {
-      video.style.display = "block";
+      video.classList.remove("escondido");
     }
   }
 }

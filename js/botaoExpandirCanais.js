@@ -1,10 +1,10 @@
-const canaisExtras = document.querySelectorAll(".menu__canal.canal-escondido");
+const canaisExtras = document.querySelectorAll(".menu__canal.escondido");
 
 const botaoExpandirCanais = document.querySelector(".menu__botao-expandir-canais");
 
 botaoExpandirCanais.addEventListener("click", () => {
   canaisExtras.forEach((canal) => {
-    canal.classList.toggle("canal-escondido");
+    canal.classList.toggle("escondido");
   });
 
   if (botaoExpandirCanais.ariaExpanded === "false") {
